@@ -1,16 +1,18 @@
 package com.fazon.simplybytespringboot.controller;
 
-import lombok.*;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/health")
-@AllArgsConstructor
 public class TestingController {
 
-    @GetMapping
-    public String health() {
-    return "Hello Everyone, Pipeline change pannitom";
+    @GetMapping("/")
+    public String home() {
+        return "Hello Everyone, Pipeline change pannitom";
     }
 
+    @GetMapping("/api/health")
+    public String health() {
+        return "Hello Everyone, Pipeline change pannitom";
+    }
 }
