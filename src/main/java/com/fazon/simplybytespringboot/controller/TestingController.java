@@ -8,6 +8,6 @@ public class TestingController {
 
     @GetMapping("/")
     public String home() {
-        return "Hello Everyone,";
+        return "Hello Everyone,jenkins pipeline completed";
     }
 }
