@@ -8,11 +8,6 @@ public class TestingController {
 
     @GetMapping("/")
     public String home() {
-        return "Hello Everyone, Pipeline created and webhook configured";
-    }
-
-    @GetMapping("/api/health")
-    public String health() {
-        return "Hello Everyone, Pipeline change pannitom";
+        return "Hello Everyone,";
     }
 }
